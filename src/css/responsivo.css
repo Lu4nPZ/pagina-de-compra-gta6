@@ -1,0 +1,62 @@
+@media(max-width: 1012px){
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu{
+        margin-top: 10px;
+    }
+
+    .menu li a{
+        padding: 17px;
+    }
+}
+
+@media(max-width: 768px){
+    .home .info{
+        padding: 50px 170px 50px 50px;
+    }
+
+    .comprar .card{
+        width: 500px;
+    }
+}
+
+@media(max-width: 500px){
+    .cabecalho{
+        padding: 18px 30px;
+    }
+
+    .menu li a{
+        padding: 17px 0;
+    }
+
+    .home .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .home::after{
+        background-color: #000;
+        opacity: 0.7;
+    }
+
+    .comprar .card{
+        width: 350px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comprar .card img{
+        max-width: 250px;
+    }
+}

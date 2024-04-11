@@ -1,0 +1,222 @@
+body{
+    background-color: #000;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 80px;
+}
+
+.logo-rockstar{
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+}
+
+.logo-gta{
+    max-width: 217px;
+    padding-left: 15px;
+}
+
+.menu{
+    color: #fff;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a{
+    font-weight: bolder;
+    font-family: 'Chalet', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 25px;
+}
+
+.menu li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .info{
+    position: absolute;
+    z-index: 1;
+    padding: 50px 50px 50px 170px;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    max-width: 800px;
+}
+
+.home .info img{
+    max-width: 250px;
+}
+
+.home .info h1{
+    color: #fff;
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 50px;
+}
+
+.home .info p{
+    color: #fff;
+    font-family: 'Chalet', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.home .info .btn-comprar{
+    padding: 20px 60px;
+    font-family: 'ChaletComprime', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, .1);
+    max-width: 230px;
+    text-align: center;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.home .info .btn-comprar:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.comprar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 40, 40);
+    padding: 50px;
+}
+
+.comprar .titulo-comprar{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+    font-family: 'ChaletComprime', sans-serif;
+    font-size: 50px;
+}
+
+.comprar .card{
+    
+    background: #000;
+    margin-top: 50px;
+    text-align: center;
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.comprar .card img{
+    max-width: 270px;
+}
+
+.comprar .card .info h2{
+    font-family: 'ChaletComprime', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.comprar .card .info p{
+    font-family: 'Chalet', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.comprar .card .info .plataformas{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.comprar .card .btn-plataforma{
+    padding: 20px 40px;
+    font-family: 'ChaletComprime', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    width: 100%;
+    text-align: center;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.comprar .card .btn-plataforma .plataformas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    display: none;
+    opacity: 0;
+    gap: 20px;
+}
+
+.card .btn-plataforma .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+}
+
+.card .btn-plataforma .plataformas li{
+    padding: 25px;
+}
+
+.card .btn-plataforma .plataformas .btn-ps{
+    border: 1px solid #00439c;
+    transition: 0.3s ease-in-out;
+}
+
+.card .btn-plataforma .plataformas .btn-ps:hover{
+    cursor: pointer;
+    background-color: #00439c;
+}
+
+.card .btn-plataforma .plataformas .btn-xbox{
+    border: 1px solid #387a26;
+    transition: 0.3s ease-in-out;
+}
+
+.card .btn-plataforma .plataformas .btn-xbox:hover{
+    cursor: pointer;
+    background-color: #387a26;
+}
+
+.card .btn-plataforma .plataformas .btn-pc{
+    border: 1px solid #fcaf17;
+    transition: 0.3s ease-in-out;
+}
+
+.card .btn-plataforma .plataformas .btn-pc:hover{
+    cursor: pointer;
+    background-color: #fcaf17;
+}
