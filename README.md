@@ -4,9 +4,11 @@ Um projeto que desenvolvi a partir de um evento, onde o projeto proposto foi uma
 
 ## Screenshot 
 Desktop 💻
+
 <img src="./src/imagens/Gravação-gta-6-desktop.gif" alt="Captura de tela desktop">
 
 Mobile 📱
+
 <img src="./src/imagens/Gravação-gta-6-mobile.gif" alt="Captura de tela mobile">
 
 ## Tecnologias utilizadas 👨‍💻
